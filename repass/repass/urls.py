@@ -20,8 +20,9 @@ from django.urls import path
 from generator import views
 
 urlpatterns = [
-    path('',views.home),
-    path('generatedpassword/',views.password,name  = 'passwor')
+    path('',views.home, name='home'),
+    path('generatedpassword/',views.password,name  = 'passwor'),
+    path('aboutpage/',views.about, name= 'aboutpage'),
 
 ]
 
